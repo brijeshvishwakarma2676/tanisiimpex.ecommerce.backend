@@ -44,7 +44,7 @@ class DashboardService:
                     "company_name": i.company_name,
                     "product_name": i.product.name if i.product else "Unknown",
                     "created_at": i.created_at.isoformat(),
-                    "status": i.status
+                    "status": "pending"
                 } for i in recent_inquiries
             ]
         }
